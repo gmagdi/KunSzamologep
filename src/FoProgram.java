@@ -19,7 +19,7 @@ public class FoProgram {
         return osszeg;
     }
     public static void main(String[] args) throws Exception {
-        System.out.println("Szia!");
+        System.out.println("Kérlek add meg az összeadandó számokat vesszővel elválasztva!");
         Scanner sc;
         sc = new Scanner(System.in);
         String szam;
