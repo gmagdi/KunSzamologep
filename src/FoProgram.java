@@ -6,7 +6,7 @@ public class FoProgram {
 
     public static int add(String numbers){
         int osszeg = 0;
-        String[] szamokSzovegkent = numbers.split(",");
+        String[] szamokSzovegkent = numbers.split("[-+/%,~*_;:&]");
         int[] szamok = new int[szamokSzovegkent.length];
         for (int y = 0; y < szamokSzovegkent.length; y++) {
             szamok[y] = Integer.parseInt(szamokSzovegkent[y]);
@@ -19,7 +19,7 @@ public class FoProgram {
         return osszeg;
     }
     public static void main(String[] args) throws Exception {
-        System.out.println("Kérlek add meg az összeadandó számokat vesszővel elválasztva!");
+        System.out.println("Kérlek add meg az összeadandó számokat az alábbi karakterek egyikével elválasztva! -+/%,~*_;:&");
         Scanner sc;
         sc = new Scanner(System.in);
         String szam;
